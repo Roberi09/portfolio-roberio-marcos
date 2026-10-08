@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Robério Marcos – Técnico de TI e Desenvolvedor">
+  <title>Robério Marcos | Portfólio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== CABEÇALHO + MENU  ========== -->
+  <header class="cabecalho">
+    <nav class="navegacao conteiner">
+      <a href="#sobre" class="logo">Robério<span>.tech</span></a>
+
+      <!-- Botão de tema claro/escuro -->
+    <label class="interruptor" title="Alternar tema claro/escuro">
+      <input type="checkbox" id="botao-tema" class="interruptor-caixa" aria-label="Alternar tema claro/escuro">
+      <div class="interruptor-trilho"></div>
+    </label>
+
+      <!-- Botão hambúrguer -->
+  <button id="botao-menu" class="botao-icone botao-menu" aria-label="Abrir menu" aria-expanded="false">
+    <span class="barra"></span>
+    <span class="barra"></span>
+    <span class="barra"></span>
+  </button>
+
+      <!-- Menu cada href aponta para o id de uma seção -->
+      <ul id="menu" class="menu">
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========== SEÇÃO: SOBRE MIM ========== -->
+    <section id="sobre" class="secao">
+      <div class="conteiner apresentacao">
+      <img class="foto" src="img/foto_prof.png" alt="Foto profissional de Robério Marcos">
+          <div><p class="saudacao">Olá, eu sou</p>
+          <h1>Robério Marcos</h1>
+          <p class="subtitulo">Técnico de TI e Desenvolvedor</p>
+          <p>
+            Moro em Boca da Mata, Alagoas, e sou dono da <strong>Robério Marcos TI &amp; Suporte</strong>,
+            onde faço manutenção de computadores e suporte de informática. Além do hardware,
+            desenvolvo sistemas: gestão, automações e aplicativos, principalmente com Python.
+          </p>
+
+          <h3>Hobbies e interesses</h3>
+          <ul class="interesses">
+            <li>Programação</li>
+            <li>Montagem e reparo de hardware</li>
+            <li>Criar conteúdo sobre tecnologia (@roberio.tech)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SEÇÃO: FORMAÇÃO ========== -->
+    <section id="formacao" class="secao alternada">
+      <div class="conteiner">
+        <h2>Formação</h2>
+
+        <div class="trilha">
+          <article class="cartao">
+            <span class="rotulo">Em andamento</span>
+            <h3>Ensino Superior – Análise e Desenvolvimento de Sistemas</h3>
+            <p>UNINTER – Centro Universitário</p>
+          </article>
+
+          <article class="cartao">
+            <span class="rotulo">Experiência prática</span>
+            <h3>Manutenção de hardware e suporte de TI</h3>
+            <p>Atendimento próprio: diagnóstico, reparo e manutenção de computadores e notebooks.</p>
+          </article>
+
+          <article class="cartao">
+            <span class="rotulo">Autodidata</span>
+            <h3>Desenvolvimento de software</h3>
+            <p>Python, APIs, automação e sites.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SEÇÃO: PORTFÓLIO ========== -->
+    <section id="portfolio" class="secao">
+      <div class="conteiner">
+        <h2>Portfólio</h2>
+
+        <div class="grade">
+          <article class="cartao projeto">
+            <h3>Site para uma Advogada</h3>
+            <p>Site de Apresentação para uma advogada.</p>
+            <p class="tecnologias">HTML · CSS</p>
+            <a href="https://github.com/Roberi09/gt.github.io" target="_blank" rel="noopener">Ver projeto →</a>
+          </article>
+
+          <article class="cartao projeto">
+            <h3>Sistema de Chamados</h3>
+            <p>Aplicativo de abertura e acompanhamento de chamados de TI para setores da prefeitura.</p>
+            <p class="tecnologias">Python · FastAPI · PostgreSQL</p>
+            <a href="https://github.com/Roberi09/ti-boca-da-mata" target="_blank" rel="noopener">Ver projeto →</a>
+          </article>
+
+          <article class="cartao projeto">
+            <h3>Este portfólio</h3>
+            <p>Site feito com HTML5, CSS3 e JavaScript puros, publicado no GitHub Pages.</p>
+            <p class="tecnologias">HTML · CSS · JavaScript</p>
+            <a href="https://github.com/Roberi09/portfolio-roberio-marcos" target="_blank" rel="noopener">Ver código →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SEÇÃO: CONTATO ========== -->
+<section id="contato" class="secao alternada">
+  <div class="conteiner estreito">
+    <h2>Contato</h2>
+    <p class="texto-suave">Fale comigo. Retorno o mais rápido possível.</p>
+    <form id="formulario-contato" novalidate>
+      <div class="campo">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome">
+        <small class="erro" id="erro-nome"></small>
+      
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="usuario@dominio.com">
+        <small class="erro" id="erro-email"></small>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem"></textarea>
+        <small class="erro" id="erro-mensagem"></small>
+    </div>
+
+      <button type="submit" class="botao">Enviar mensagem</button>
+    </form>
+
+    <!-- Redes e contatos -->
+<div class="redes">
+  <a class="rede-link whatsapp" href="https://wa.me/5582998220681?text=Ol%C3%A1%2C%20vim%20pelo%20seu%20portf%C3%B3lio!"
+     target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"></a>
+  <a class="rede-link instagram" href="https://www.instagram.com/roberio.tech/"
+     target="_blank" rel="noopener" aria-label="Instagram @roberio.tech" title="Instagram"></a>
+  <a class="rede-link github" href="https://github.com/Roberi09"
+     target="_blank" rel="noopener" aria-label="GitHub Roberi09" title="GitHub"></a>
+  <a class="rede-link linkedin" href="https://www.linkedin.com/in/robério-marcos-058a39350"
+     target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+</a>
+</div>
+</section>
+  </main>
+
+  <footer class="rodape">
+    <p>© <span id="ano"></span> Robério Marcos · Boca da Mata – AL</p>
+  </footer>
+<!-- Modal de confirmação (fica escondido até o formulário ser válido) -->
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo" hidden>
+  <div class="modal-caixa">
+    <h3 id="modal-titulo">Mensagem enviada com sucesso!</h3>
+    <p>Obrigado pelo contato. Responderei em breve.</p>
+    <button id="modal-fechar" class="botao">Fechar</button>
+  </div>
+</div>
+  <script src="js/script.js"></script>
+</body>
+</html>
