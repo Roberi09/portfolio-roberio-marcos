@@ -149,6 +149,16 @@ h3 { margin: 1.2rem 0 .5rem; }
 .tecnologias { color: var(--texto-suave); font-size: .85rem; margin: .6rem 0; }
 .projeto a { font-weight: 600; }
 
+.cartao-largo { grid-column: 1 / -1; }
+
+.lista-cursos { margin-top: 1rem; display: grid; gap: 10px; }
+.lista-cursos li {
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px;
+  padding-top: 10px; border-top: 1px solid var(--borda);
+}
+.lista-cursos a { font-weight: 600; }
+.lista-cursos small { color: var(--texto-suave); }
+
 /* Formulário de contato */
 .campo { margin-top: 18px; }
 label { display: block; font-weight: 700; margin-bottom: 3px; }
