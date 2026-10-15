@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Robério Marcos – Técnico de TI e Desenvolvedor">
+  <title>Robério Marcos | Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== CABEÇALHO + MENU  ========== -->
+  <header class="cabecalho">
+    <nav class="navegacao conteiner">
+      <a href="#sobre" class="logo">Robério<span>.tech</span></a>
+
+      <!-- Botão de tema claro/escuro -->
+    <label class="interruptor" title="Alternar tema claro/escuro">
+      <input type="checkbox" id="botao-tema" class="interruptor-caixa" aria-label="Alternar tema claro/escuro">
+      <div class="interruptor-trilho"></div>
+    </label>
+
+      <!-- Botão hambúrguer -->
+  <button id="botao-menu" class="botao-icone botao-menu" aria-label="Abrir menu" aria-expanded="false">
+    <span class="barra"></span>
+    <span class="barra"></span>
+    <span class="barra"></span>
+  </button>
+
+      <!-- Menu cada href aponta para o id de uma seção -->
+      <ul id="menu" class="menu">
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main>
+  <!-- ========== SEÇÃO: SOBRE MIM ========== -->
+  <section id="sobre" class="secao hero">
+    <div class="conteiner hero-grade">
+      <div>
+        <h1>Consertando a tecnologia, restaurando a confiança.</h1>
+        <p>Sou técnico de TI em Boca da Mata, Alagoas. Na <strong>Robério Marcos TI &amp; Suporte</strong>
+          conserto computadores e dou suporte de informática; fora da bancada, escrevo sistemas de gestão,
+          automações e aplicativos, principalmente em Python.</p>
+        <a class="botao" href="#contato">Abrir chamado</a>
+      </div>
+
+      <aside class="etiqueta" aria-label="Identificação">
+        <img class="foto" src="img/foto_prof.png" alt="Foto profissional de Robério Marcos">
+        <dl>
+          <dt>Responsável</dt><dd>Robério Marcos</dd>
+          <dt>Função</dt><dd>Técnico de TI e desenvolvedor</dd>
+          <dt>Oficina</dt><dd>Boca da Mata, AL</dd>
+          <dt>Interesses</dt><dd>Programação, hardware e conteúdo em @roberio.tech</dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO: FORMAÇÃO ========== -->
+  <section id="formacao" class="secao alternada">
+    <div class="conteiner">
+      <h2>Formação</h2>
+
+      <ul class="registro">
+        <li class="registro-item">
+          <span class="situacao ativa">Em andamento</span>
+          <div>
+            <h3>Análise e Desenvolvimento de Sistemas</h3>
+            <p>UNINTER – Centro Universitário</p>
+          </div>
+          <span class="registro-meta">Ensino superior</span>
+        </li>
+
+        <li class="registro-item">
+          <span class="situacao">Concluído</span>
+          <div>
+            <h3>Desenvolvimento Orientado a Objetos utilizando a Linguagem Python</h3>
+            <p>Fundação Bradesco · Escola Virtual</p>
+            <a href="certificados/python-orientacao-objetos.pdf" target="_blank" rel="noopener">Ver certificado</a>
+          </div>
+          <span class="registro-meta">10 horas, março de 2025</span>
+        </li>
+
+        <li class="registro-item">
+          <span class="situacao">Concluído</span>
+          <div>
+            <h3>Administrando Banco de Dados</h3>
+            <p>Fundação Bradesco · Escola Virtual</p>
+            <a href="certificados/administrando-banco-de-dados.pdf" target="_blank" rel="noopener">Ver certificado</a>
+          </div>
+          <span class="registro-meta">15 horas, fevereiro de 2025</span>
+        </li>
+
+        <li class="registro-item">
+          <span class="situacao">Concluído</span>
+          <div>
+            <h3>Power BI, análise de dados e redes</h3>
+            <p>Microsoft Learn: 16 módulos entre março de 2025 e outubro de 2026, de relatórios e painéis a segurança em nível de linha, Python e DHCP.</p>
+            <details>
+              <summary>Ver módulos com certificado</summary>
+              <ul class="modulos">
+                <li><a href="certificados/implementar-gerenciar-dhcp.pdf" target="_blank" rel="noopener">Implantar e gerenciar DHCP</a><small>13/10/2026, avaliação aprovada</small></li>
+                <li><a href="certificados/criar-calculos-visuais-power-bi-desktop.pdf" target="_blank" rel="noopener">Criar cálculos visuais no Power BI Desktop</a><small>20/05/2025, avaliação aprovada</small></li>
+                <li><a href="certificados/implementar-segurança-linha.pdf" target="_blank" rel="noopener">Implementar segurança em nível de linha</a><small>12/05/2025</small></li>
+                <li><a href="certificados/criar-paineis-power-bi.pdf" target="_blank" rel="noopener">Criar painéis no Power BI</a><small>01/05/2025</small></li>
+                <li><a href="certificados/criar-relatorios-interativos.pdf" target="_blank" rel="noopener">Criar relatórios interativos usando o Copilot para Power BI</a><small>16/03/2025, avaliação aprovada</small></li>
+                <li><a href="certificados/explorar-analisar-dados-python.pdf" target="_blank" rel="noopener">Explorar e analisar dados com o Python</a><small>12/03/2025, avaliação aprovada</small></li>
+              </ul>
+            </details>
+          </div>
+          <span class="registro-meta">Certificados</span>
+        </li>
+      </ul>
+
+      <div class="pratica">
+        <h3>Na prática</h3>
+        <dl>
+          <dt>Bancada</dt><dd>Diagnóstico, reparo e manutenção de computadores e notebooks, em atendimento próprio.</dd>
+          <dt>Código</dt><dd>Python, APIs, automação e sites, aprendidos fazendo.</dd>
+          <dt>Idiomas</dt><dd>Português nativo, inglês básico e técnico.</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO: PORTFÓLIO ========== -->
+  <section id="portfolio" class="secao">
+    <div class="conteiner">
+      <h2>Portfólio</h2>
+
+      <div class="vitrine">
+        <article class="projeto projeto-principal">
+          <h3>Sistema de Chamados</h3>
+          <p>Aplicativo de abertura e acompanhamento de chamados de TI para os setores da prefeitura.</p>
+          <p class="tecnologias">Python, FastAPI e PostgreSQL</p>
+          <a href="https://github.com/Roberi09/ti-boca-da-mata" target="_blank" rel="noopener">Ver no GitHub</a>
+        </article>
+
+        <article class="projeto">
+          <h3>Site para uma advogada</h3>
+          <p>Site de apresentação profissional.</p>
+          <p class="tecnologias">HTML e CSS</p>
+          <a href="https://github.com/Roberi09/gt.github.io" target="_blank" rel="noopener">Ver no GitHub</a>
+        </article>
+
+        <article class="projeto">
+          <h3>Este portfólio</h3>
+          <p>HTML5, CSS3 e JavaScript puros, publicado no GitHub Pages.</p>
+          <p class="tecnologias">HTML, CSS e JavaScript</p>
+          <a href="https://github.com/Roberi09/portfolio-roberio-marcos" target="_blank" rel="noopener">Ver no GitHub</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO: CONTATO ========== -->
+  <section id="contato" class="secao alternada">
+    <div class="conteiner contato-grade">
+      <div>
+        <h2>Abra um chamado</h2>
+        <p>Conte o que está acontecendo: a máquina, o sistema ou a ideia. Respondo o mais rápido possível.</p>
+
+        <div class="redes">
+          <a class="rede-link whatsapp" href="https://wa.me/5582998220681?text=Ol%C3%A1%2C%20vim%20pelo%20seu%20portf%C3%B3lio!" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"></a>
+          <a class="rede-link instagram" href="https://www.instagram.com/roberio.tech/" target="_blank" rel="noopener" aria-label="Instagram @roberio.tech" title="Instagram"></a>
+          <a class="rede-link github" href="https://github.com/Roberi09" target="_blank" rel="noopener" aria-label="GitHub Roberi09" title="GitHub"></a>
+          <a class="rede-link linkedin" href="https://www.linkedin.com/in/robério-marcos-058a39350" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"></a>
+        </div>
+      </div>
+
+      <form id="formulario-contato" novalidate>
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome">
+          <small class="erro" id="erro-nome"></small>
+        </div>
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="usuario@dominio.com">
+          <small class="erro" id="erro-email"></small>
+        </div>
+        <div class="campo">
+          <label for="mensagem">O que está acontecendo?</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva o problema ou a ideia"></textarea>
+          <small class="erro" id="erro-mensagem"></small>
+        </div>
+        <button type="submit" class="botao">Abrir chamado</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <p>© <span id="ano"></span> Robério Marcos · Boca da Mata, AL</p>
+</footer>
+
+<!-- Modal de confirmação (fica escondido até o formulário ser válido) -->
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo" hidden>
+  <div class="modal-caixa">
+    <h3 id="modal-titulo">Chamado aberto</h3>
+    <p>Recebi seu chamado. Respondo em breve.</p>
+    <button id="modal-fechar" class="botao">Fechar</button>
+  </div>
+</div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
